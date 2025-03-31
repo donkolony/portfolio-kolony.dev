@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Don Kolony" />
+    <meta name="description" content="The official Portfolio of Don Kolony" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kolony - PortFolio</title>
+    <link rel="icon" href="./public/icon/portfolio_icon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+    />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/mediaquerries.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="#home" class="logo">D.K.</a>
+      <!-- Mobile Menu Toggle -->
+      <div
+        class="navbar__toggle"
+        id="mobile-menu"
+        aria-expanded="false"
+        role="button"
+      >
+        <span class="bar"></span>
+        <span class="bar" style="visibility: hidden"></span>
+        <span class="bar"></span>
+      </div>
+      <!-- Navbar  -->
+      <nav class="navbar">
+        <a href="./index.html#home" class="navbar__links">Home</a>
+        <a href="./index.html#skills" class="navbar__links">Skills</a>
+        <a href="./index.html#portfolio" class="navbar__links">Portfolio</a>
+        <a href="./index.html#about" class="navbar__links">About</a>
+        <a href="./public/contact.html" class="navbar__links">Contact</a>
+      </nav>
+    </header>
+
+    <main class="main">
+      <!-- HERO SECTION -->
+      <section class="hero" id="home">
+        <img
+          class="hero__img"
+          draggable="true"
+          src="./public/image/icon-portFolio.png"
+          alt=" Dieudonné Kolony profile, Civil"
+        />
+        <p class="hero__description">Hello 👋, I'm</p>
+        <h1 class="title">Dieudonne Kolony</h1>
+        <p class="sub-title-role">Civil Technologist</p>
+        <div class="hero-buttons">
+          <a
+            href="./public/cv.pdf"
+            class="hero__btn resume-btn"
+            aria-label="Download cv of Dieudonné Kolony"
+            >Download CV
+          </a>
+          <a
+            href="#contact"
+            class="hero__btn contact-btn"
+            aria-label="Navigate to the contact section"
+            >Contact
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
