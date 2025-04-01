@@ -59,7 +59,8 @@ a {
   --HEADER-COLOR: #fff;
   --HERO-BGCOLOR: #000;
   --HERO-COLOR: #fff;
-  --NAV-BGCOLOR: #000;
+  --NAV-BGCOLOR: #212529;
+  --NAV-BGCOLOR2: #000;
   --SECTION-BG: #191919;
   --LINK-ACTIVE: orange;
   --LINK-COLOR: hsla(0, 0%, 90%, 0.7);
@@ -242,7 +243,7 @@ p {
 .title {
   font-size: 3rem;
   font-weight: 600;
-  /* margin-top: 8px; */
+  margin-top: 8px;
 }
 
 .hero-quote {
