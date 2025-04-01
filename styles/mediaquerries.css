@@ -95,6 +95,14 @@
   .secondary-btn {
     padding: 0.8rem;
   }
+
+  .mini-about {
+    flex-direction: column;
+  }
+
+  .mini-card {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 600px) {
