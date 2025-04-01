@@ -74,6 +74,10 @@
   }
 
   /*********** HERO SECTION **********/
+  .hero {
+    margin-top: 3rem;
+    height: 55vh;
+  }
 
   .hero h4 {
     font-size: 1rem;
