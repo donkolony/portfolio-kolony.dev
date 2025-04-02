@@ -76,7 +76,7 @@
   /*********** HERO SECTION **********/
   .hero {
     margin-top: 3rem;
-    height: 55vh;
+    /* height: 55vh; */
   }
 
   .hero h4 {
@@ -104,16 +104,15 @@
     width: 100%;
   }
 
-  /* ABOUT SECTION */
-  .about__cards-container {
-    flex-wrap: wrap;
-    justify-content: flex-start;
+  .about__description {
+    text-align: center;
   }
 }
 
 @media screen and (max-width: 900px) {
   #hero {
-    height: min-content;
+    height: 30vh;
+    scroll-margin-block-start: 7.5rem;
   }
 
   .about__cards-container {
@@ -144,5 +143,11 @@
   .primary-btn,
   .secondary-btn {
     padding: 0.7rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #hero {
+    scroll-margin-block-start: 5rem;
   }
 }
