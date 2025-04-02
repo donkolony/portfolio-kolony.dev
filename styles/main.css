@@ -1,5 +1,5 @@
 /* Font Type Face Import */
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 /* || Reset */
 *,
@@ -43,15 +43,15 @@ a {
 /* || Variables */
 :root {
   /* Fonts */
-  --FF: "Inter", sans-serif;
-  --FF-HEADINGS: "Inter", sans-serif;
+  --FF: "Poppins", sans-serif;
+  --FF-HEADINGS: "Poppins", sans-serif;
   --FS: clamp(1rem, 2.2vh, 1.5rem);
   --FW-TEXT: 500;
   --FW-HEADINGS: 700;
 
   /* Colors */
-  --BGCOLOR-LITE: #fff;
   --BGCOLOR-DARK: #212529;
+  --BGCOLOR-LITE: hsl(37, 100%, 100%);
   --BGCOLOR-DARK2: #000;
   --FONT-COLOR: #fff;
   --HEADER-BGCOLOR: #212529;
@@ -69,6 +69,9 @@ a {
   --BGFONT-DARK: #fff;
   --BGFONT-LIGHT: #131313;
   --BGBUTTON-LIGHT: #fff;
+
+  --ANI1: red;
+  --ANI2: purple;
 
   /* Padding */
   --PADDING-SIDE: 0 30px;
@@ -93,14 +96,14 @@ h1 {
   font-size: clamp(1rem, 3vw, 2.5rem);
   line-height: 1.2em;
   max-width: 880px;
-  /* width: 100%; */
   color: var(--FONT-COLOR);
 }
 
 h2 {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   color: var(--FONT-COLOR);
-  padding-bottom: 20px;
+  text-align: center;
+  margin: 5rem 0;
 }
 
 /* h3 {
@@ -204,9 +207,6 @@ p {
 
 /********************** HERO SECTION ***********************/
 .main {
-  /* display: flex;
-  flex-direction: column;
-  align-items: center; */
   min-height: 100vh;
 }
 
@@ -221,8 +221,8 @@ p {
 }
 
 .hero-img {
-  width: 180px;
-  border: 5px solid #ffb742;
+  width: 11rem;
+  border: 3px solid #ffb742;
   border-radius: 50%;
 }
 
@@ -303,52 +303,131 @@ p {
   transition: all 0.5s ease;
 }
 
-/********************** MINI-ABOUT SECTION ***********************/
-.mini-about {
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
-  gap: 1rem;
-  margin-top: 7rem;
-  /* flex-wrap: wrap; */
-  max-width: 1300px;
-  margin: 0 auto;
+/********************** ABOUT SECTION ***********************/
+#about {
+  height: 100vh;
 }
 
-.mini-card {
-  border: 2px solid lightgrey;
-  border-radius: 1rem;
-  padding: 1rem;
+.section__title span {
+  color: #ffb742;
+}
+
+.section__container {
   display: flex;
   flex-direction: column;
-  gap: 5px;
-  width: 350px;
-  cursor: pointer;
-  margin-top: 5rem;
-  /* background-color: hsl(37, 100%, 80%); */
+  align-items: center;
+  gap: 1rem;
 }
 
-.mini-card:hover {
-  background-color: hsl(37, 100%, 90%);
+.about-img {
+  position: relative;
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-img img {
+  width: 90%;
+}
+
+.about-img .circle-spin {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0);
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border-top: 0.1rem solid transparent;
+  border-bottom: 0.1rem solid transparent;
+  border-left: 0.1rem solid #ffb742;
+  border-right: 0.1rem solid #ffb742;
+  animation: aboutSpinner 8s linear infinite;
+}
+
+.about__description {
+  margin-top: 1rem;
+  max-width: 800px;
+  text-align: justify;
+}
+
+.about__description::before {
+  content: "<p>";
+  color: #ffb742;
+  font-size: 1.2rem;
+}
+
+.about__description::after {
+  content: "</p>";
+  color: #ffb742;
+  font-size: 1.2rem;
+}
+
+.about__cards-container {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+  max-width: 800px;
+}
+
+.about-cards {
+  border: 1px solid hsl(37, 100%, 80%);
+  border-radius: 12px;
+  text-align: center;
+  width: calc((800px - (2 * 30px)) / 3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding: 1rem;
+}
+
+.about-cards:hover {
+  cursor: pointer;
+  background-color: #ffb742;
   transition: all 1s ease;
 }
 
-.mini-card i {
+.about-cards:hover i {
+  color: #fff;
+  transition: all 1s ease;
+}
+
+.about-cards i {
   font-size: 1.5rem;
   color: #ffb742;
 }
 
-.mini-card h4 {
-  font-size: 1.2rem;
+@keyframes aboutSpinner {
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
 }
 
-.mini-card:hover h4 {
-  color: #000;
-  transition: all 1s ease;
-}
-
-.mini-card p {
-  font-size: 12px;
-  font-style: italic;
-}
 /********************** SKILLS SECTION ***********************/
+#skills {
+  margin-top: 5rem;
+  height: 100vh;
+  /* background-color: yellow; */
+  display: none;
+}
+
+skills__container {
+  display: flex;
+}
+
+.skills__detail-container {
+  /* display: flex; */
+  border: 1px solid #ffb742;
+  border-radius: 16px;
+  padding: 1rem;
+}
+
+.skills__content-container {
+}

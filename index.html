@@ -30,23 +30,24 @@
       </div>
       <!-- Navbar  -->
       <nav class="navbar">
-        <a href="./index.html#home" class="navbar__links">Home</a>
-        <a href="./index.html#skills" class="navbar__links">Skills</a>
-        <a href="./index.html#portfolio" class="navbar__links">Portfolio</a>
+        <a href="./index.html" class="navbar__links">Home</a>
         <a href="./index.html#about" class="navbar__links">About</a>
+        <a href="./index.html#skills" class="navbar__links">Skills</a>
         <a href="./public/contact.html" class="navbar__links">Contact</a>
       </nav>
     </header>
 
-    <!-------------------------- HERO SECTION -------------------------->
     <main class="main">
+      <!-------------------------- HERO SECTION -------------------------->
       <section class="hero">
         <img
           src="./public/image/icon-portFolio.png"
           alt="Dieudonne Kolony profile image"
           class="hero-img"
         />
-        <h4>Hello 👋, I'm <span> Dieudonne Kolony</span></h4>
+        <h4>
+          Hello 👋, I'm <span class="text-animate"> Dieudonne Kolony</span>
+        </h4>
         <p class="title">Civil Engineering Technologist</p>
         <p class="hero-quote">Be The Change You Want To See In The World!</p>
         <div class="hero-btn">
@@ -65,27 +66,79 @@
         </div>
       </section>
 
-      <!-------------------------- EDUCATION SECTION -------------------------->
-      <div class="mini-about">
-        <div class="mini-card">
-          <i class="ri-macbook-fill"></i>
-          <h4>Experience</h4>
-          <p>+2 years</p>
+      <!-------------------------- ABOUT SECTION -------------------------->
+      <section id="about">
+        <div class="section__container">
+          <h2 class="section__title">About <span>Me</span></h2>
+          <div class="about-img">
+            <img
+              src="./public/image/icon-portFolio.png"
+              alt="Dieudonne Kolony profile image"
+              class="hero-img"
+            />
+            <span class="circle-spin"></span>
+          </div>
+          <p class="about__description">
+            Hello, World 👋 I am a civil engineering professional with a
+            Bachelor of Technology in Civil Engineering from Cape Peninsula
+            University of Technology. I specialize in delivering precise and
+            functional designs for infrastructure and structural projects,
+            including road networks, water systems, and civil layouts. My focus
+            is on creating solutions that are both efficient and sustainable,
+            ensuring long-term impact. I am also committed to lifelong learning
+            and continuously upskilling to stay at the forefront of industry
+            advancements, allowing me to adapt to new challenges and improve the
+            quality of my work
+          </p>
+          <div class="about__cards-container">
+            <div class="about-cards">
+              <i class="ri-arrow-right-up-fill"></i>
+              <h4>Experience</h4>
+              <p>+2 years</p>
+            </div>
+            <div class="about-cards">
+              <i class="ri-arrow-right-up-fill"></i>
+              <h4>Education</h4>
+              <p>Degree in Engineering</p>
+            </div>
+            <div class="about-cards">
+              <i class="ri-arrow-right-up-fill"></i>
+              <h4>Skills</h4>
+              <p>Always Evolving</p>
+            </div>
+          </div>
         </div>
-        <div class="mini-card">
-          <i class="ri-school-fill"></i>
-          <h4>Education</h4>
-          <p>Degree in Civil Engineering</p>
-        </div>
-        <div class="mini-card">
-          <i class="ri-arrow-right-up-line"></i>
-          <h4>Skills</h4>
-          <p>Always Evolving</p>
-        </div>
-      </div>
-    </main>
+      </section>
 
-    <!-------------------------- SKILLS SECTION -------------------------->
+      <!-------------------------- SKILLS SECTION -------------------------->
+      <section id="skills">
+        <div class="section__container">
+          <h2 class="section__title">My <span>Skills</span></h2>
+          <div class="skills__container">
+            <div class="skills__detail-container">
+              <h4>Technical Skills</h4>
+              <div class="skills__content-container">
+                <p>AutoCAD</p>
+                <p>Revit</p>
+                <p>Civil 3D</p>
+                <p>Civil Designer</p>
+                <p>Prokon</p>
+                <p>Survey</p>
+              </div>
+            </div>
+            <div class="skills__detail-container">
+              <h4>Soft Skills</h4>
+              <div class="skills__content-container">
+                <p>Attention to detail</p>
+                <p>Team Collaboration</p>
+                <p>Problem Solving</p>
+                <p>Self Motivation</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <script src="./index.js"></script>
   </body>

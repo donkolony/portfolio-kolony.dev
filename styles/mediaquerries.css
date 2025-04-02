@@ -103,6 +103,24 @@
   .mini-card {
     width: 100%;
   }
+
+  /* ABOUT SECTION */
+  .about__cards-container {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .about__cards-container {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .about-cards {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 600px) {
