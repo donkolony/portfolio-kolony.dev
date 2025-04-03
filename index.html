@@ -33,52 +33,52 @@
         <a href="./index.html#hero" class="navbar__links">Home</a>
         <a href="./index.html#about" class="navbar__links">About</a>
         <a href="./index.html#skills" class="navbar__links">Skills</a>
-        <a href="./public/contact.html" class="navbar__links">Contact</a>
+        <a href="./index.html#contact" class="navbar__links">Contact</a>
       </nav>
     </header>
 
-    <main class="main">
-      <!-------------------------- HERO SECTION -------------------------->
-      <section class="hero" id="hero">
-        <img
-          src="./public/image/icon-portFolio.png"
-          alt="Dieudonne Kolony profile image"
-          class="hero-img"
-        />
-        <h4>
-          Hello 👋, I'm <span class="text-animate"> Dieudonne Kolony</span>
-        </h4>
-        <p class="title">Civil Engineering Technologist</p>
-        <p class="hero-quote">Be The Change You Want To See In The World!</p>
-        <div class="hero-btn">
-          <button
-            class="primary-btn resume"
-            onclick="window.open('./public/cv.pdf')"
-          >
-            Download CV
-          </button>
-          <button
-            class="secondary-btn contact"
-            onclick="location.href='/#contact'"
-          >
-            Contact Info
-          </button>
-        </div>
-      </section>
+    <!-------------------------- HERO SECTION -------------------------->
+    <section class="hero" id="hero">
+      <img
+        src="./public/image/icon-portFolio.png"
+        alt="Dieudonne Kolony profile image"
+        class="hero-img"
+      />
+      <h4>Hello 👋, I'm <span class="text-animate"> Dieudonne Kolony</span></h4>
+      <p class="title">Civil Engineering Technologist</p>
+      <p class="hero-quote">Be The Change You Want To See In The World!</p>
+      <div class="hero-btn">
+        <button
+          class="primary-btn resume"
+          onclick="window.open('./public/cv.pdf')"
+        >
+          Download CV
+        </button>
+        <button
+          class="secondary-btn contact"
+          onclick="location.href='/#contact'"
+        >
+          Contact Info
+        </button>
+      </div>
+    </section>
 
-      <!-------------------------- ABOUT SECTION -------------------------->
-      <section id="about">
-        <div class="section__container">
-          <h2 class="section__title">About <span>Me</span></h2>
-          <div class="about-img">
-            <img
-              src="./public/image/icon-portFolio.png"
-              alt="Dieudonne Kolony profile image"
-              class="hero-img"
-            />
-            <span class="circle-spin"></span>
-          </div>
-          <p class="about__description">
+    <!-------------------------- ABOUT SECTION -------------------------->
+    <section id="about" class="about">
+      <h2 class="section__title">About <span>Me</span></h2>
+      <div class="about__section-container">
+        <div class="about-img">
+          <img
+            src="./public/image/icon-portFolio.png"
+            alt="Dieudonne Kolony profile image"
+            class="hero-img"
+          />
+          <span class="circle-spin"></span>
+        </div>
+
+        <div class="about-content">
+          <p class="title">Civil Engineering Technologist!</p>
+          <p>
             Hello, World 👋 I am a civil engineering professional with a
             Bachelor of Technology in Civil Engineering from Cape Peninsula
             University of Technology. I specialize in delivering precise and
@@ -90,56 +90,125 @@
             advancements, allowing me to adapt to new challenges and improve the
             quality of my work
           </p>
-          <div class="about__cards-container">
-            <div class="about-cards">
-              <i class="ri-arrow-right-up-fill"></i>
-              <h4>Experience</h4>
-              <p>+2 years</p>
+        </div>
+        <div class="about__cards-container">
+          <div class="about-cards">
+            <i class="ri-arrow-right-up-fill"></i>
+            <h4>Experience</h4>
+            <p>+2 years</p>
+          </div>
+          <div class="about-cards">
+            <i class="ri-arrow-right-up-fill"></i>
+            <h4>Education</h4>
+            <p>Degree in Engineering</p>
+          </div>
+          <div class="about-cards">
+            <i class="ri-arrow-right-up-fill"></i>
+            <h4>Skills</h4>
+            <p>Always Evolving</p>
+          </div>
+        </div>
+        <button
+          class="secondary-btn"
+          onclick="location.href='mailto:Dieudonne.Kolony#outlook.com'"
+        >
+          Copy Email
+        </button>
+      </div>
+    </section>
+
+    <!-------------------------- SKILLS SECTION -------------------------->
+    <section id="skills">
+      <div class="section__container">
+        <h2 class="section__title">My <span>Skills</span></h2>
+        <div class="skills__container">
+          <div class="skills__detail-container">
+            <h4>Technical Skills</h4>
+            <div class="skills__content-container">
+              <ul>
+                <li>AutoCAD</li>
+                <li>Revit</li>
+                <li>Civil 3D</li>
+                <li>Civil Designer</li>
+                <li>Prokon</li>
+                <li>Survey</li>
+              </ul>
             </div>
-            <div class="about-cards">
-              <i class="ri-arrow-right-up-fill"></i>
-              <h4>Education</h4>
-              <p>Degree in Engineering</p>
-            </div>
-            <div class="about-cards">
-              <i class="ri-arrow-right-up-fill"></i>
-              <h4>Skills</h4>
-              <p>Always Evolving</p>
+          </div>
+          <div class="skills__detail-container">
+            <h4>Soft Skills</h4>
+            <div class="skills__content-container">
+              <ul>
+                <li>Attention to detail</li>
+                <li>Team Collaboration</li>
+                <li>Problem Solving</li>
+                <li>Self Motivation</li>
+                <li>Critical Thinking</li>
+                <li>Goal driven</li>
+              </ul>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-------------------------- SKILLS SECTION -------------------------->
-      <section id="skills">
-        <div class="section__container">
-          <h2 class="section__title">My <span>Skills</span></h2>
-          <div class="skills__container">
-            <div class="skills__detail-container">
-              <h4>Technical Skills</h4>
-              <div class="skills__content-container">
-                <p>AutoCAD</p>
-                <p>Revit</p>
-                <p>Civil 3D</p>
-                <p>Civil Designer</p>
-                <p>Prokon</p>
-                <p>Survey</p>
-              </div>
-            </div>
-            <div class="skills__detail-container">
-              <h4>Soft Skills</h4>
-              <div class="skills__content-container">
-                <p>Attention to detail</p>
-                <p>Team Collaboration</p>
-                <p>Problem Solving</p>
-                <p>Self Motivation</p>
-              </div>
-            </div>
-          </div>
+    <!-------------------------- Contact SECTION -------------------------->
+    <section id="contact">
+      <div class="form__container">
+        <h2 class="section__title">Contact <span>Me</span></h2>
+        <div class="form__section-container">
+          <form action="">
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Name"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email"
+              required
+            />
+            <textarea
+              type="message"
+              name="message"
+              id="message"
+              placeholder="Message"
+              required
+            ></textarea>
+            <!-- Form Button -->
+            <button type="submit" class="secondary-btn">Submit</button>
+          </form>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
 
+    <!-------------------------- Footer SECTION -------------------------->
+    <footer class="footer">
+      <div class="social__links-container">
+        <a href="https://wa.me/+270715907431"
+          ><i class="ri-whatsapp-line"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/d-kolony/"
+          ><i class="ri-linkedin-line"></i
+        ></a>
+        <a href="https://www.instagram.com/ "
+          ><i class="ri-instagram-line"></i
+        ></a>
+        <a href="https://x.com/?lang=en"><i class="ri-twitter-line"></i></a>
+      </div>
+      <nav class="navbar">
+        <a href="./index.html#hero" class="navbar__links">Home</a>
+        <a href="./index.html#about" class="navbar__links">About</a>
+        <a href="./index.html#skills" class="navbar__links">Skills</a>
+        <a href="./index.html#contact" class="navbar__links">Contact</a>
+      </nav>
+      <p>&copy; 2025 - All rights Reserved</p>
+      <p>Designed & Developed by Dieudonne Kolony</p>
+    </footer>
     <script src="./index.js"></script>
   </body>
 </html>

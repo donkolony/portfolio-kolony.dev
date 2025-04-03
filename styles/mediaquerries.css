@@ -1,20 +1,5 @@
 @media screen and (max-width: 768px) {
   /* GENERAL */
-  h1 {
-    font-size: clamp(2rem, 5vw, 4rem);
-  }
-
-  h2 {
-    font-size: 3rem;
-  }
-
-  h3 {
-    font-size: 2rem;
-  }
-
-  h4 {
-    font-size: 1.2rem;
-  }
 
   .hero {
     min-height: 60vh;
@@ -74,80 +59,6 @@
   }
 
   /*********** HERO SECTION **********/
-  .hero {
-    margin-top: 3rem;
-    /* height: 55vh; */
-  }
-
-  .hero h4 {
-    font-size: 1rem;
-  }
-
-  .title {
-    font-size: 2rem;
-  }
-
-  .hero-quote {
-    font-size: 0.6rem;
-  }
-
-  .primary-btn,
-  .secondary-btn {
-    padding: 0.8rem;
-  }
-
-  .mini-about {
-    flex-direction: column;
-  }
-
-  .mini-card {
-    width: 100%;
-  }
-
-  .about__description {
-    text-align: center;
-  }
 }
 
-@media screen and (max-width: 900px) {
-  #hero {
-    height: 30vh;
-    scroll-margin-block-start: 7.5rem;
-  }
-
-  .about__cards-container {
-    flex-direction: column;
-    width: 100%;
-    gap: 10px;
-  }
-
-  .about-cards {
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .hero-img {
-    width: 120px;
-  }
-
-  .hero h4 {
-    font-size: 0.8rem;
-  }
-
-  .title {
-    font-size: 1.2rem;
-    text-align: center;
-  }
-
-  .primary-btn,
-  .secondary-btn {
-    padding: 0.7rem;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  #hero {
-    scroll-margin-block-start: 5rem;
-  }
-}
+/*  */
