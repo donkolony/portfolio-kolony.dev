@@ -52,29 +52,8 @@ a {
   /* Colors */
   --BGCOLOR-DARK: #212529;
   --BGCOLOR-LITE: hsl(37, 100%, 100%);
-  --BGCOLOR-DARK2: #000;
   --FONT-COLOR: #fff;
-  --HEADER-BGCOLOR: #212529;
-  --HEADER-BGCOLOR2: #000;
-  --HEADER-COLOR: #fff;
-  --HERO-BGCOLOR: #000;
-  --HERO-COLOR: #fff;
-  --NAV-BGCOLOR: #212529;
-  --NAV-BGCOLOR2: #000;
-  --SECTION-BG: #191919;
-  --LINK-ACTIVE: orange;
   --LINK-COLOR: hsla(0, 0%, 90%, 0.7);
-  --LINK-HOVER: #fff;
-  --BGBUTTON-DARK: #131313;
-  --BGFONT-DARK: #fff;
-  --BGFONT-LIGHT: #131313;
-  --BGBUTTON-LIGHT: #fff;
-
-  /* Padding */
-  --PADDING-SIDE: 0 30px;
-
-  /* Borders */
-  --SEC-BORDER-RAD: 20px;
 }
 
 /* || General */
@@ -85,7 +64,7 @@ html {
 body {
   background-color: var(--BGCOLOR-DARK);
   min-height: 100vh;
-  padding: var(--PADDING-SIDE);
+  padding: 0 30px;
   overflow-x: hidden;
   color: #fff;
 }
@@ -97,9 +76,9 @@ p {
 
 .section__title {
   text-align: center;
-  margin-top: 5rem;
-  margin-bottom: 3rem;
-  font-size: 5rem;
+  margin-top: 2.2rem;
+  margin-bottom: 1rem;
+  font-size: 3.5rem;
 }
 
 .section__title span {
@@ -143,6 +122,10 @@ p {
   position: relative;
 }
 
+.navbar-home {
+  color: #ffb742;
+}
+
 .navbar__links::after {
   content: "";
   position: absolute;
@@ -179,6 +162,9 @@ p {
 }
 
 /********************** HERO SECTION ***********************/
+#hero {
+  height: 80vh;
+}
 
 .hero {
   display: flex;
@@ -279,9 +265,7 @@ p {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 2rem;
   padding-bottom: 6rem;
-
   max-width: 1300px;
   margin: 0 auto;
 }
@@ -337,7 +321,7 @@ p {
 }
 
 .about-content p {
-  margin: 2rem 0 3rem;
+  margin: 2rem 0;
   max-width: 800px;
 }
 
@@ -358,7 +342,7 @@ p {
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
-  margin-bottom: 3rem;
+  margin-bottom: 1.5rem;
 }
 
 .about-cards {
@@ -413,6 +397,7 @@ p {
 }
 
 /********************** CONTACT SECTION ***********************/
+
 .form__container {
   display: flex;
   flex-direction: column;
@@ -452,7 +437,7 @@ form textarea {
 }
 
 form textarea {
-  height: 300px;
+  height: 260px;
   resize: none;
 }
 
